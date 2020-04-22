@@ -1,0 +1,31 @@
+.custom-file-input:lang(es) ~ .custom-file-label::after {
+  content: "Elegir";
+}
+
+.table-icons {
+  font-size: larger;
+}
+
+.fa.fa-dot-circle-o.risk-dot-red {
+  color: #e74a3b;
+  font-size: large;
+}
+
+.fa.fa-dot-circle-o.risk-dot-green {
+  color: #1cc88a;
+  font-size: large;
+}
+
+.fa.fa-dot-circle-o.risk-dot-yellow {
+  color: #f6c23e;
+  font-size: large;
+}
+
+.sidebar #sidebarToggle:after {
+  content: "";
+}
+
+.sidebar.toggled #sidebarToggle:after {
+  content: "";
+}
+

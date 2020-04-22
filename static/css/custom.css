@@ -1,0 +1,36 @@
+.custom-file-input:lang(es) ~ .custom-file-label::after {
+  content: "Elegir";
+}
+
+.table-icons {
+  font-size: larger;
+}
+
+.fa.fa-dot-circle-o.risk-dot-red {
+  color: #e74a3b;
+  font-size: large;
+}
+
+.fa.fa-dot-circle-o.risk-dot-green {
+  color: #1cc88a;
+  font-size: large;
+}
+
+.fa.fa-dot-circle-o.risk-dot-yellow {
+  color: #f6c23e;
+  font-size: large;
+}
+
+.sidebar #sidebarToggle:after {
+  content: "";
+}
+
+.sidebar.toggled #sidebarToggle:after {
+  content: "";
+}
+
+.form-control::-webkit-input-placeholder { color: #a0aec0; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #a0aec0; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #a0aec0; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #a0aec0; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #a0aec0; }

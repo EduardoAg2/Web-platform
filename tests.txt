@@ -1,0 +1,1 @@
+- Revisar aquellos campos cuyo datatype sea nvarchar(MAX). Tantos caracteres no son necesarios pero puede causar problemas en un futuro.

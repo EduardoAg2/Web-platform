@@ -1,0 +1,99 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+{% block page_title %}
+Plataforma | Nuevo empleado
+{% endblock %}
+
+{% block content %}
+<div id="content">
+    <div class="container-fluid">
+        <h3 class="text-dark mb-4">Agregar un nuevo empleado</h3>
+        <div class="row d-xl-flex justify-content-xl-center">
+            <div class="col-4">
+                <form action="#" method="POST" id="id-form-nuevo-empleado">
+                    {% csrf_token %}
+                    <div class="card shadow mb-3">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 font-weight-bold">Información personal</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-fecha-conceptual"><strong>Nombres</strong></label><input type="text" class="form-control form-control-sm" id="id-empleado-nombre" name="nombres" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-fecha-avance"><strong>Apellidos</strong><br /></label><input type="text" class="form-control form-control-sm" id="id-empleado-apellidos" name="apellidos" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-fecha-final"><strong>Usuario</strong><br /></label><input type="text" class="form-control form-control-sm" id="id-empleado-usuario" name="usuario" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-fecha-final"><strong>Contraseña</strong><br /></label><input type="password" class="form-control form-control-sm" id="id-empleado-password" name="password" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-fecha-entrega"><strong>Cargo</strong><br /></label><input type="text" class="form-control form-control-sm" name="cargo" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-horas-proyectadas-ing"><strong>Unidad</strong><br /></label><select class="form-control form-control-sm" id="id-empleado-unidad" name="unidad">
+                                        {% for unidad in unidades_negocio %}
+                                        <option value="{{ unidad.id }}" selected>{{ unidad.unidad }}</option>
+                                        {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-horas-proyectadas-dib"><strong>Correo electrónico</strong><br /></label><input type="text" class="form-control form-control-sm" id="id-empleado-telefono-fijo" name="correo" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-horas-proyectadas-dib"><strong>Teléfono celular</strong><br /></label><input type="text" class="form-control form-control-sm" id="id-empleado-telefono-celular" name="tel_celular" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="id-horas-proyectadas-dib"><strong>Teléfono fijo</strong><br /></label><input type="text" class="form-control form-control-sm" id="id-empleado-telefono-fijo" placeholder="Opcional" name="tel_fijo" /></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="id-check-gerente" name="es_gerente" /><label class="custom-control-label" for="id-check-gerente">El usuario es gerente de unidad</label></div>
+                                </div>
+                            </div>
+                            <div class="form-row mt-4">
+                                <div class="col"><button class="btn btn-primary btn-block btn-sm float-right" id="id-btn-guardar-usuario-1">Guardar usuario</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block custom_javascript%}
+<!-- <script>
+    //Global variables
+    contratistas_url = "{% url 'datos_contratista' %}"
+</script>
+<script src="{% static 'diseño/js/form.js' %}"></script>
+<script src="{% static 'diseño/js/ajax.js' %}"></script>
+<script src="{% static 'diseño/js/test.js' %}"></script>
+<script src="{% static 'diseño/js/apertura_diseño.js' %}"></script>
+<script src="{% static 'diseño/js/events.js' %}"></script> -->
+{% endblock %}

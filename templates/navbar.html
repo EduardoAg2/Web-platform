@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Apertura de proyectos de diseño</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome5-overrides.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <ul class="nav flex-column shadow d-flex sidebar mobile-hid">
+            <li class="nav-item logo-holder">
+                <div class="text-center text-white logo py-4 mx-4"><a class="text-white text-decoration-none" id="title" href="#"><strong>ENERCOM</strong></a><a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a></div>
+            </li>
+            <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link text-left text-white py-1 px-0 position-relative" data-toggle="dropdown" aria-expanded="true" href="#"><i class="fas fa-pencil-ruler mx-3"></i><span class="text-nowrap mx-2">Gestión de diseño</span><i class="fas fa-caret-down float-none float-lg-right fa-sm"></i></a>
+                <div
+                    class="dropdown-menu show border-0 animated fadeIn" role="menu"><a class="dropdown-item text-white" role="presentation" href="navbar.html"><span>Resumen</span></a><a class="dropdown-item text-white" role="presentation" href="apertura_diseño.html"><span>Apertura de proyectos</span></a><a class="dropdown-item text-white"
+                        role="presentation" href="#"><span>Cierre de proyectos</span></a></div>
+            </li>
+            <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-money-bill-alt mx-3"></i><span class="text-nowrap mx-2">Gestión comercial</span></a></li>
+            <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-building mx-3"></i><span class="text-nowrap mx-2">Gestión proyectos</span></a></li>
+             <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-life-ring mx-3"></i><span class="text-nowrap mx-2">Herramientas</span></a></li>
+            <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-archive mx-3"></i><span class="text-nowrap mx-2">Archive</span></a></li>
+            <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-chart-bar mx-3"></i><span class="text-nowrap mx-2">Statistics</span></a></li>
+            <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-sign-out-alt mx-3"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2">Log out</span></a></li>
+            </ul>
+
+            <!--Aqui va el contenido de la pagina. Todo lo demas es HTML para el navigation bar de la izquierda!-->
+            {% block content %}
+            {% endblock %}
+
+            <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bs-init.js' %}"></script>
+    <script src="{% static 'js/form.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="{% static 'js/sidebar.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>

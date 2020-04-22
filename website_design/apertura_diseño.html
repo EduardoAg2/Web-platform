@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Apertura de proyectos de diseño</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+</head>
+
+<body id="page-top">
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-equipo">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Editar el equipo de trabajo</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Nombre</label><select class="form-control form-control-sm"><option value="13">Eduardo Aguilar</option><option value="14">Fernando Galindo</option><option value="">Joselyn Amaya</option><option value="">Jorge Rivera</option></select></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cerrar</button><button class="btn btn-primary" type="button">Agregar al equipo</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-interesados">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Editar el personal interesado</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Nombre</label><select class="form-control form-control-sm"><option value="13">Eduardo Aguilar</option><option value="14">Fernando Galindo</option><option value="">Joselyn Amaya</option><option value="">Jorge Rivera</option></select></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cerrar</button><button class="btn btn-primary" type="button">Agregar al personal interesado</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-agregar-riesgos">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Editor de riesgos</h4><span>&nbsp; &nbsp;<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-listariesgos">Ver listado de riesgos comunes</button></span><button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Descripcion breve del riesgo</label><input class="form-control form-control-sm" type="text" data-toggle="tooltip" data-bs-tooltip="" title="Una descripcion breve del riesgo en menos de 10 palabras."></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Tipo de riesgo</label><select class="form-control form-control-sm"><option value="12" selected="">Riesgo tecnico</option><option value="13">Riesgo administrativo</option><option value="14">Riesgo externo</option></select></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label>Proceso que detecta</label><select class="form-control form-control-sm"><option value="12" selected="">Diseño</option><option value="13">Gerencia general</option><option value="14">Ejecucion electrica</option></select></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label>Probabilidad de ocurrencia</label><select class="form-control form-control-sm"><option value="12" selected="">Baja</option><option value="13">Media</option><option value="14">Alta</option></select></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label>Impacto del riesgo</label><select class="form-control form-control-sm"><option value="12" selected="">Bajo</option><option value="13">Medio</option><option value="14">Alto</option></select></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Descripcion detallada del riesgo</label><textarea class="form-control" placeholder="Descripcion del riesgo de manera detallada. Si la descripcion breve es suficiente este espacio se puede dejar en blanco."></textarea></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Causas principales</label><textarea class="form-control" placeholder="Enumere cuales son las causas principales de este riesgo."></textarea></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Respuesta inicial ante el riesgo</label><textarea class="form-control" placeholder="Escrbir la respuesta inicial en caso de que el riesgo propuesto llegue a suceder."></textarea></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Medidas preventivas</label><textarea class="form-control" placeholder="Las medidas de prevencion de este riesgo."></textarea></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cerrar</button><button class="btn btn-primary" type="button">Guardar</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-listariesgos">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Lista de riesgos comunes</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Riesgo</th>
+                                                        <th class="text-center">Acciones</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span><i class="fa fa-dot-circle-o risk-dot-red"></i>&nbsp;Cambios diseño arquitectonico, civil, estructural<br></span></td>
+                                                        <td class="text-center"><span class="table-icons"><i class="fa fa-check-square-o" data-toggle="tooltip" data-bs-tooltip="" title="Agregar"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span><i class="fa fa-dot-circle-o risk-dot-green"></i>&nbsp;Experiencia limitada del ingeniero<br></span></td>
+                                                        <td class="text-center"><span class="table-icons"><i class="fa fa-check-square-o" data-toggle="tooltip" data-bs-tooltip="" title="Agregar"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span><i class="fa fa-dot-circle-o risk-dot-yellow"></i>&nbsp;Cambios en diseño arquitectonico, civil, o estructural<br></span></td>
+                                                        <td class="text-center"><span class="table-icons"><i class="fa fa-check-square-o" data-toggle="tooltip" data-bs-tooltip="" title="Agregar"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cerrar</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-contratistas">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Agregar contratista</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="col">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <div class="form-row">
+                                                <div class="col-7"><label>Nombre del contratista</label><select class="form-control form-control-sm"><option value="12" selected="">Javier Dubon</option><option value="13">Nahun Cruz</option><option value="14">Yankel Calix</option></select></div>
+                                                <div
+                                                    class="col-3"><label>Tipo de contratista</label><input class="form-control form-control-sm" type="text" readonly=""></div>
+                                            <div class="col"><label>Evaluación</label><input class="form-control form-control-sm" type="text" readonly=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label>Criterio de selección</label><textarea class="form-control form-control-sm" placeholder="Si el porcentaje de evaluacion es menor al 80% indicar cual fue el criterio de seleccion de este contratista. Limitar el criterio a una sola palabra, como por ejemplo: Precio, Experiencia, Unico etc."></textarea></div>
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cerrar</button><button class="btn btn-primary" type="button">Agregar</button></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="wrapper">
+        <ul class="nav flex-column shadow d-flex sidebar mobile-hid" id="sidebar">
+            <li class="nav-item logo-holder">
+                <div class="text-center text-white logo py-4 mx-4" id="bootstrap-override"><a class="text-white text-decoration-none" id="title" href="#"><strong>ENERCOM</strong></a><a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a></div>
+            </li>
+            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-left text-white py-1 px-0 position-relative" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-pencil-ruler mx-3"></i><span class="text-nowrap mx-2">Gestión de diseño</span><i class="fas fa-caret-down float-none float-lg-right fa-sm"></i></a>
+                <div
+                    class="dropdown-menu border-0 animated fadeIn" role="menu"><a class="dropdown-item text-white" role="presentation" href="navbar.html"><span>Resumen</span></a><a class="dropdown-item text-white" role="presentation" href="apertura_diseño.html"><span>Apertura de proyectos</span></a><a class="dropdown-item text-white"
+                        role="presentation" href="#"><span>Cierre de proyectos</span></a></div>
+    </li>
+    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-money-bill-alt mx-3"></i><span class="text-nowrap mx-2">Gestión comercial</span></a></li>
+    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-building mx-3"></i><span class="text-nowrap mx-2">Gestión proyectos</span></a></li>
+    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-life-ring mx-3"></i><span class="text-nowrap mx-2">Herramientas</span></a></li>
+    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-archive mx-3"></i><span class="text-nowrap mx-2">Archive</span></a></li>
+    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-chart-bar mx-3"></i><span class="text-nowrap mx-2">Statistics</span></a></li>
+    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-sign-out-alt mx-3"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2">Log out</span></a></li>
+    </ul>
+    <div class="d-flex flex-column" id="content-wrapper">
+        <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav flex-nowrap ml-auto">
+                    <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu" aria-labelledby="searchDropdown">
+                            <form class="form-inline mr-auto navbar-search w-100">
+                                <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                    <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                role="menu">
+                                <h6 class="dropdown-header">alerts center</h6>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="mr-3">
+                                        <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">December 12, 2019</span>
+                                        <p>A new monthly report is ready to download!</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="mr-3">
+                                        <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">December 7, 2019</span>
+                                        <p>$290.29 has been deposited into your account!</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="mr-3">
+                                        <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">December 2, 2019</span>
+                                        <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                    </div>
+                                </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-envelope fa-fw"></i><span class="badge badge-danger badge-counter">7</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                role="menu">
+                                <h6 class="dropdown-header">alerts center</h6>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
+                                        <div class="bg-success status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                        <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                        <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
+                                        <div class="bg-warning status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                        <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
+                                        <div class="bg-success status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                        <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                    </div>
+                                </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                        </div>
+                        <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                    </li>
+                    <div class="d-none d-sm-block topbar-divider"></div>
+                    <li class="nav-item dropdown no-arrow" role="presentation">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Eduardo Aguilar&nbsp;<i class="fa fa-chevron-down"></i></span></a>
+                            <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"
+                                role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                <a
+                                    class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="content">
+            <div class="container-fluid">
+                <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                    <h3 class="text-dark mb-0">F-GDP-00 - Apertura de proyectos de diseño</h3>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Datos generales</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-nombre-proyecto"><strong>Nombre del proyecto</strong></label><input class="form-control form-control-sm" type="text" id="id-nombre-proyecto" name="nombre-proyecto"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-codigo-proyecto"><strong>Codigo del proyecto</strong></label><input class="form-control form-control-sm" type="text" id="id-codigo-proyecto" name="codigo_proyecto"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-ingeniero-lider"><strong>Ingeniero lider del proyecto</strong></label><select class="form-control form-control-sm" id="id-ingeniero-lider" name="ingeniero-proyecto"><option value="12" selected="">Eduardo Aguilar</option><option value="13">Francis Matute</option><option value="14">Jorge Rivera</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-fecha-solicitud"><strong>Fecha de solicitud</strong></label><input class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-solicitud" type="date" title="Fecha en la que se recibe la orden de compra o aprobacion por parte del cliente."
+                                                    name="fecha_solicitud"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-tipo"><strong>Tipo de aprobacion</strong></label><select class="form-control form-control-sm" id="id-tipo-aprobacion" name="tipo-aprobacion"><option value="12" selected="">Telefono</option><option value="13">Correo</option><option value="14">Orden compra</option><option value="20">Interno</option></select></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-cotizacion-presente"><strong>Se presento cotizacion</strong><br></label><select class="form-control form-control-sm" id="id-cotizacion-presente" name="cotizacion-presente"><option value="12" selected="">Si</option><option value="13">No</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-8">
+                                            <div class="form-group"><label for="id-direccion-electronica"><strong>Direccion electronica</strong><br></label><input class="form-control form-control-sm" type="text" data-toggle="tooltip" data-bs-tooltip="" id="id-direccion-electronica"
+                                                    name="direccion-electronica" title="La direccion de la carpeta en el portal."></div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group"><label for="id-estado-proyecto"><strong>Estado del proyecto</strong><br></label><select class="form-control form-control-sm" id="id-estado-proyecto" name="estado-proyecto"><option value="12" selected="">En proceso</option><option value="13">Completado</option></select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Cronograma de ejecución</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-fecha-conceptual"><strong>Fecha de diseño conceptual</strong></label><input class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-conceptual" type="date" title="Fecha en la que se tiene proyectado presentar el diseño conceptual."
+                                                    name="fecha-conceptual"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-fecha-avance"><strong>Fecha de revisión de primer avance</strong></label><input class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-avance" type="date" title="Fecha en la que se tiene proyectado presentar el primer avance."
+                                                    name="fecha-avance"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-fecha-final"><strong>Fecha de revisión final</strong><br></label><input class="form-control" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-final" type="date" title="Fecha en la que se tiene proyectado presentar el diseño final antes de enviar al cliente."
+                                                    name="fecha-final"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-fecha-entrega"><strong>Fecha de entrega</strong><br></label><input class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-entrega" type="date" title="Fecha en la que se tiene que presentar el proyecto al cliente."
+                                                    name="fecha-entrega"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-horas-proyectadas-ing"><strong>Horas ingeniero proyectadas</strong><br></label><input class="form-control form-control-sm" type="number" data-toggle="tooltip" data-bs-tooltip="" id="id-horas-proyectadas-ing"
+                                                    title="La cantidad de horas ingeniero incluidas en el presupuesto." name="horas-proyectadas-ing"></div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group"><label for="id-horas-proyectadas-dib"><strong>Horas dibujante proyectadas</strong><br></label><input class="form-control form-control-sm" type="number" data-toggle="tooltip" data-bs-tooltip="" id="id-horas-proyectadas-dib"
+                                                    title="La cantidad de horas dibujante incluidas en el presupuesto." name="horas-proyectadas-dib"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-horas-reales-ing"><strong>Horas ingeniero reales</strong><br></label><input class="form-control form-control-sm" type="text" data-toggle="tooltip" data-bs-tooltip="" id="id-horas-reales-ing" readonly=""
+                                                    title="El numero de horas ingeniero que han sido invertidas en el proyecto hasta la fecha." name="horas-reales-ing"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-horas-reales-dib"><strong>Horas dibujante reales</strong><br></label><input class="form-control form-control-sm" type="text" data-toggle="tooltip" data-bs-tooltip="" id="id-horas-reales-dib" readonly=""
+                                                    title="El numero de horas dibujante que han sido invertidas en el proyecto hasta la fecha." name="id-horas-reales-dib"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Alcance del proyecto</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label data-toggle="tooltip" data-bs-tooltip="" for="id-descripcion-trabajo"><strong>Descripción del trabajo a realizar</strong><br></label><textarea class="form-control" id="id-descripcion-trabajo" rows="4"
+                                                    name="descripcion-trabajo"></textarea></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-8">
+                                            <div class="form-group"><label for="first_name"><strong>Ubicacion del proyecto</strong></label><input class="form-control form-control-sm" type="text" id="id-ubicacion-geografica" name="ubicacion-geografica"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-categoria-proyecto"><strong>Categoria del proyecto</strong></label><select class="form-control form-control-sm" id="id-categoria-proyecto" name="categoria-proyecto"><option value="12" selected="">Diseño completo</option><option value="13">Diseño abreviado</option><option value="14">Estudio</option><option value="20">Mantenimiento</option></select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Datos del cliente</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="username"><strong>Nombre del cliente</strong></label><select class="form-control form-control-sm" id="id-nombre-cliente" name="nombre-cliente"><option value="12" selected="">Cargill</option><option value="13">Louis Dreyfus Company</option><option value="14">Cerveceria Hondureña</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-nombre-contacto-principal"><strong>Nombre contacto principal</strong></label><input class="form-control form-control-sm" type="text" id="id-nombre-contacto-principal" name="nombre-contacto-principal"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-telefono-contacto-principal"><strong>Telefono contacto principal</strong></label><input class="form-control form-control-sm" type="text" id="id-telefono-contacto-principal" name="telefono-contacto-principal"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-email-contacto-principal"><strong>Correo contacto principal</strong></label><input class="form-control form-control-sm" type="email" id="id-email-contacto-principal" name="email-contacto-principal"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-nombre-contacto-cobro"><strong>Nombre contacto para cobro</strong></label><input class="form-control form-control-sm" type="text" id="id-nombre-contacto-cobro" name="nombre-contacto-cobro"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-telefono-contacto-cobro"><strong>Telefono contacto para cobro</strong><br></label><input class="form-control form-control-sm" type="text" id="id-telefono-contacto-cobro" name="telefono-contacto-cobro"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="id-email-contacto-cobro"><strong>Correo contacto para cobro</strong><br></label><input class="form-control form-control-sm" type="email" id="id-email-contacto-cobro" name="email-contacto-principal"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <p class="text-primary m-0 font-weight-bold">Contratistas</p>
+                                        </div>
+                                        <div class="col"><button class="btn btn-primary btn-sm float-right" id="id-btn-agregar-contratistas" type="button" data-toggle="modal" data-target="#modal-contratistas">Agregar contratistas</button></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre contratista</th>
+                                                    <th>Porcentaje de evaluacion</th>
+                                                    <th>Tipo contratista</th>
+                                                    <th>Motivo de seleccion</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="id-tbl-visible-contratistas">
+                                                <tr>
+                                                    <td name="nombre-contratista">Nahun Cruz</td>
+                                                    <td>87%</td>
+                                                    <td>Obra electrica</td>
+                                                    <td name="criterio-seleccion">Experiencia</td>
+                                                    <td class="text-center"><span class="table-icons">&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="nombre-contratista">Gabriela Martinez</td>
+                                                    <td>ND</td>
+                                                    <td>Obra civil</td>
+                                                    <td name="criterio-seleccion">Precio</td>
+                                                    <td class="text-center"><span class="table-icons">&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Normativas a cumplir</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-nfpa" value="nfpa"><label class="custom-control-label" for="id-norm-nfpa">NFPA</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-enee" value="enee"><label class="custom-control-label" for="id-norm-enee">ENEE</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-otra" value="otras"><label class="custom-control-label" for="id-norm-otra">Otras</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-asme" value="asme"><label class="custom-control-label" for="id-norm-asme">ASME</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-ansi" value="ansi"><label class="custom-control-label" for="id-norm-ansi" value="3">ANSI</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-ieee" value="ieee"><label class="custom-control-label" for="id-norm-ieee">IEEE</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-iec" value="iec"><label class="custom-control-label" for="id-norm-iec">IEC</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-gerencia" value="gerencia"><label class="custom-control-label" for="id-norm-gerencia">Criterio gerencia</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-norm-cliente" value="cliente"><label class="custom-control-label" for="id-norm-cliente">Normativa cliente</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><textarea class="form-control" id="id-comentario-normativas" rows="4" name="comentario-normativas" placeholder="En caso de haber seleccionado &quot;Otras&quot; especificar cuales son, y donde se pueden consultar."></textarea></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Criterio de costo del diseño</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-costo-0" name="criterio-costo" value="0"><label class="custom-control-label" for="id-criterio-costo-0">Minimizar la inversión inicial únicamente.</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-costo-1" name="criterio-costo" value="1"><label class="custom-control-label" for="id-criterio-costo-1">Minimizar la inversión inicial y el costo de operación y mantenimiento.</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-costo-2" name="criterio-costo" value="2"><label class="custom-control-label" for="id-criterio-costo-2">El costo no es mayor problema, siempre que se mantenga dentro de los rangos manejados en el mercado. </label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-costo-3" name="criterio-costo" value="3"><label class="custom-control-label" for="id-criterio-costo-3">No aplica (estudios).</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-costo-4" name="criterio-costo" value="4"><label class="custom-control-label" for="id-criterio-costo-4">Otros criterios.</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group"><textarea class="form-control" id="id-comentario-criterio-costo" rows="4" name="signature" placeholder="En caso de haber seleccionado &quot;Otros criterios&quot; especificar cuales son en este espacio."></textarea></div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Criterio de calidad del diseño</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-calidad-0" name="criterio-calidad" value="0"><label class="custom-control-label" for="id-criterio-calidad-0">Debe cumplir con las normas generalmente aceptadas en la construcción local (minimiza el costo). El diseñador debe validar la naturaleza de las desviaciones a las normas internacionales con criterios de ingeniería apropiados y recibir aprobación del cliente antes de entregar el diseño.</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-calidad-1" name="criterio-calidad" value="1"><label class="custom-control-label" for="id-criterio-calidad-1">Debe cumplir con normas internacionales (aumenta el costo de la implementación del diseño).</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-calidad-2" name="criterio-calidad" value="2"><label class="custom-control-label" for="id-criterio-calidad-2">Debe cumplir con normas específicas del cliente. Por favor indicar dónde se pueden consultar esas normas. </label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="id-criterio-calidad-3" name="criterio-calidad" value="3"><label class="custom-control-label" for="id-criterio-calidad-3">Otros criterios.</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group"><textarea class="form-control" id="id-comentario-criterio-calidad" rows="4" name="signature" placeholder="En caso de haber seleccionado &quot;Otros criterios&quot; especificar cuales son en este espacio."></textarea></div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Criterio de tiempo y funcionalidad</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <ul class="list-group">
+                                                <li class="list-group-item" id="id-listgroup-criterio-tiempo-0">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-criterio-tiempo-0" value="Se debe considerar crecimiento futuro."><label class="custom-control-label" for="id-criterio-tiempo-0">Se debe considerar crecimiento futuro.</label></div>
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group"><textarea class="form-control" id="id-comentario-criterio-tiempo-0" rows="4" name="signature" placeholder="Espacio para comentarios"></textarea></div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </li>
+                                                <li class="list-group-item" id="id-listgroup-criterio-tiempo-1">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-criterio-tiempo-1" value="El cliente tiene experiencia con diseños similares o existe una supervision externa que tenga experiencia.">
+                                                        <label
+                                                            class="custom-control-label" for="id-criterio-tiempo-1">El cliente tiene experiencia con diseños similares o existe una supervision externa que tenga experiencia</label>
+                                                    </div>
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group"><textarea class="form-control" id="id-comentario-criterio-tiempo-1" rows="4" name="signature" placeholder="Enumere las mejoras que podemos realizar en este nuevo diseño según su criterio si ya hay experiencias anteriores."></textarea></div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <p class="text-primary m-0 font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" title="Se puede hacer click sobre cada riesgo para ver mas detalles del mismo. Esa es la idea.">Matriz de riesgos</p>
+                                        </div>
+                                        <div class="col text-danger"><button class="btn btn-primary btn-sm float-right" id="id-btn-agregar-riesgos" type="button" data-toggle="modal" data-target="#modal-agregar-riesgos">Agregar riesgos</button></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Riesgo</th>
+                                                    <th class="text-center">Probabilidad ocurrencia</th>
+                                                    <th class="text-center">Impacto</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="id-tbl-visible-riesgos">
+                                                <tr>
+                                                    <td name="nombre-riesgo"><span><i class="fa fa-dot-circle-o risk-dot-red"></i>&nbsp;Cambios diseño arquitectonico, civil, estructural<br></span></td>
+                                                    <td class="text-center"><span class="badge badge-pill badge-danger text-center" name="probabilidad-ocurrencia-riesgo">Alta</span></td>
+                                                    <td class="text-center"><span class="badge badge-pill badge-warning" name="impacto-riesgo">Medio</span></td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-eye" data-toggle="tooltip" data-bs-tooltip="" title="Ver detalle"></i>&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="nombre-riesgo"><span><i class="fa fa-dot-circle-o risk-dot-green"></i>&nbsp;Limitaciones tecnicas del contratista<br></span></td>
+                                                    <td class="text-center"><span class="badge badge-pill badge-success" name="probabilidad-ocurrencia-riesgo">Baja</span></td>
+                                                    <td class="text-center"><span class="badge badge-pill badge-danger" name="impacto-riesgo">Alto</span></td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-eye" data-toggle="tooltip" data-bs-tooltip="" title="Ver detalle"></i>&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Entregables por parte del cliente</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group" id="id-formgroup-entregable-cliente-0">
+                                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregables-cliente-0" value="planos iniciales"><label class="custom-control-label" for="id-entregables-cliente-0">Planos iniciales</label></div>
+                                                            <input
+                                                                class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-entregable-planos" type="date" title="Fecha en la que el cliente entragará la documentacion mencionada."></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group" id="id-formgroup-entregable-cliente-1">
+                                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregables-cliente-1" value="datos maquinaria"><label class="custom-control-label" for="id-entregables-cliente-1">Datos tecnicos equipo - maquinaria</label></div>
+                                                            <input
+                                                                class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-entregable-maquinaria" type="date" title="Fecha en la que el cliente entragará la documentacion mencionada."></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group" id="id-formgroup-entregable-cliente-2">
+                                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregables-cliente-2" value="estudios preliminares"><label class="custom-control-label" for="id-entregables-cliente-2">Estudios o mediciones preliminares</label></div>
+                                                            <input
+                                                                class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-entregable-estudios" type="date" title="Fecha en la que el cliente entragará la documentacion mencionada."></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group" id="id-formgroup-entregable-cliente-3">
+                                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregables-cliente-3" value="tramites enee"><label class="custom-control-label" for="id-entregables-cliente-3">Tramites ante la ENEE</label></div>
+                                                            <input
+                                                                class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-entregable-enee" type="date" title="Fecha en la que el cliente entragará la documentacion mencionada."></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group" id="id-formgroup-entregable-cliente-4">
+                                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregables-cliente-4" value="tramites municipalidad"><label class="custom-control-label" for="id-entregables-cliente-4">Tramites ante la municipalidad</label></div>
+                                                            <input
+                                                                class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-entregable-muni" type="date" title="Fecha en la que el cliente entragará la documentacion mencionada."></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group" id="id-formgroup-entregable-cliente-5">
+                                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregables-cliente-5" value="otros tramites"><label class="custom-control-label" for="id-entregables-cliente-5">Tramites ante otros organismos</label></div>
+                                                            <input
+                                                                class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" id="id-fecha-entregable-otros" type="date" title="Fecha en la que el cliente entragará la documentacion mencionada."></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><textarea class="form-control" id="id-comentario-entregables-cliente" rows="4" name="signature" placeholder="Espacio para comentarios. Aqui se puede aclarar cuales son &quot;otros organismos&quot; u otros requisitos que no estan enumerados."></textarea></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Entregables por parte de ENERCOM</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-0" value="0"><label class="custom-control-label" for="id-entregable-enercom-0">Planos</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-4" value="4"><label class="custom-control-label" for="id-entregable-enercom-4">Especificaciones</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-8" value="8"><label class="custom-control-label" for="id-entregable-enercom-8">Otros</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-1" value="1"><label class="custom-control-label" for="id-entregable-enercom-1">Presupuesto</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-5" value="5"><label class="custom-control-label" for="id-entregable-enercom-5">Alcance</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-2" value="2"><label class="custom-control-label" for="id-entregable-enercom-2">Memoria calculo</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-6" value="6"><label class="custom-control-label" for="id-entregable-enercom-6">Corridas software</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-3" value="3"><label class="custom-control-label" for="id-entregable-enercom-3">Reporte traducido</label></div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-entregable-enercom-7" value="7"><label class="custom-control-label" for="id-entregable-enercom-7">Especificaciones tecnicas</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><textarea class="form-control" id="id-comentario-entregables-enercom" rows="4" name="comentario-entregables-enercom" placeholder="En caso de haber seleccionado &quot;Otros&quot; especificar cuales son en este espacio."></textarea></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Requisitos legales del diseño</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-bs-tooltip="" title="Proyectar costos de contratar un ingeniero ambiental. Aplicable cuando se tienen que cortar ramas o arboles para una linea de distribucion o transmision."><input class="custom-control-input" type="checkbox" id="id-requisitos-legales-0" value="0"><label class="custom-control-label" for="id-requisitos-legales-0">Permisos ambientales</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-requisitos-legales-1" value="1"><label class="custom-control-label" for="id-requisitos-legales-1">Permiso municipal</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-requisitos-legales-2" value="2"><label class="custom-control-label" for="id-requisitos-legales-2">Aprobacion ENEE</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-bs-tooltip="" title="Permiso para solicitar al INSEP el derecho de via. Aplica para lineas de transmision o distribucion."><input class="custom-control-input" type="checkbox" id="id-requisitos-legales-3" value="3"><label class="custom-control-label" for="id-requisitos-legales-3">Permiso gubernamental</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="id-requisitos-legales-4" value="4"><label class="custom-control-label" for="id-requisitos-legales-4">Otros</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group"><textarea class="form-control" id="id-comentario-requisitos-legales" rows="4" name="signature" placeholder="En caso de haber seleccionado &quot;Otros&quot; especificar cuales son en este espacio."></textarea></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <p class="text-primary m-0 font-weight-bold">Equipo de trabajo</p>
+                                        </div>
+                                        <div class="col"><button class="btn btn-primary btn-sm float-right" data-toggle="modal" data-bs-tooltip="" id="id-btn-agregar-equipo" type="button" title="Personas que estan involucradas en la ejecucion de este diseño. Usualmente solo es el ingeniero lider y el dibujante."
+                                                data-target="#modal-equipo">Agregar al equipo de trabajo</button></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Cargo</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="id-tbl-visible-equipo">
+                                                <tr>
+                                                    <td name="nombre-empleado">Eduardo Aguilar</td>
+                                                    <td name="cargo-empleado">Ingeniero Diseño</td>
+                                                    <td class="text-center"><span class="table-icons">&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="nombre-empleado">Joselyn Amaya</td>
+                                                    <td name="cargo-empleado">Dibujante</td>
+                                                    <td class="text-center"><span class="table-icons">&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <p class="text-primary m-0 font-weight-bold">Personal interesado</p>
+                                        </div>
+                                        <div class="col"><button class="btn btn-primary btn-sm float-right" data-toggle="modal" data-bs-tooltip="" id="id-btn-agregar-interesados" type="button" title="Personal que debe de ser notificado al momento de aperturar este proyecto."
+                                                data-target="#modal-interesados">Agregar al listado de personal interesado</button></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Unidad</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="id-tbl-visible-interesados">
+                                                <tr>
+                                                    <td name="nombre-interesado">Carlos Suazo</td>
+                                                    <td name="unidad-interesado">Gerencia general</td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="nombre-interesado">Fernando Galindo</td>
+                                                    <td name="unidad-interesado">Diseño</td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="nombre-interesado">Tania Hernandez</td>
+                                                    <td name="unidad-interesado">Seguridad industrial</td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="nombre-interesado">Joel Castrillo</td>
+                                                    <td name="unidad-interesado">Contabilidad</td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="nombre-interesado">Fabiola Romero</td>
+                                                    <td name="unidad-interesado">Seguimiento y satisfacción</td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <p class="text-primary m-0 font-weight-bold">Presupuesto</p>
+                                        </div>
+                                        <div class="col">
+                                            <div class="custom-file"><input type="file" id="id-btn-subir-presupuesto" class="custom-file-input" lang="es"><label class="custom-file-label">Elegir un archivo</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive table-bordered">
+                                        <table class="table table-bordered table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Revision</th>
+                                                    <th class="text-center">Venta</th>
+                                                    <th class="text-center">Material</th>
+                                                    <th class="text-center">Mano obra</th>
+                                                    <th class="text-center">Administrativos</th>
+                                                    <th class="text-center">Utilidad neta</th>
+                                                    <th class="text-center">Porcentaje utilidad</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="id-tbl-visible-presupuesto">
+                                                <tr>
+                                                    <td name="presupuesto-revision">Presupuesto inicial</td>
+                                                    <td class="text-right" name="presupuesto-venta-total">100,000.00</td>
+                                                    <td class="text-right">50,000.00</td>
+                                                    <td class="text-right">10,000.00</td>
+                                                    <td class="text-right">5,000.00</td>
+                                                    <td class="text-right">45,000</td>
+                                                    <td class="text-right">45.02%</td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-eye" data-toggle="tooltip" data-bs-tooltip="" title="Ver detalle"></i>&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td name="presupuesto-revision">Adicional #1</td>
+                                                    <td class="text-right" name="presupuesto-venta-total">23,000.00</td>
+                                                    <td class="text-right">5,000.00</td>
+                                                    <td class="text-right">1,000.00</td>
+                                                    <td class="text-right">1,000.00</td>
+                                                    <td class="text-right">16,000</td>
+                                                    <td class="text-right">48.39%</td>
+                                                    <td class="text-center"><span class="table-icons"><i class="fa fa-eye" data-toggle="tooltip" data-bs-tooltip="" title="Ver detalle"></i>&nbsp;&nbsp;<i class="fa fa-edit" data-toggle="tooltip" data-bs-tooltip="" title="Editar"></i>&nbsp;&nbsp;<i class="fa fa-remove" data-toggle="tooltip" data-bs-tooltip="" title="Eliminar"></i></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col"><button class="btn btn-primary float-right" id="id-btn-guardar-formato" type="button">Guardar formato</button><button class="btn btn-danger" id="id-btn-prueba" type="button">BOTON DE PRUEBA</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="bg-white sticky-footer">
+            <div class="container my-auto">
+                <div class="text-center my-auto copyright"><span>Copyright © ENERCOM 2020</span></div>
+            </div>
+        </footer>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
